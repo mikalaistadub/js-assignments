@@ -369,10 +369,10 @@ function get3TopItems(arr) {
  *   [ 1, '2' ] => 1
  */
 function getPositivesCount(arr) {
-   // throw new Error('Not implemented');
-   let newArr = [];
-   newArr.push(arr.filter(number => number > 0));
-   return newArr[0].length;
+   throw new Error('Not implemented');
+   // let newArr = [];
+   // newArr.push(arr.filter(number => number > 0));
+   // return newArr[0].length;
 }
  
 /** 
@@ -535,12 +535,12 @@ function getIdentityMatrix(n) {
  *     3, 3   => [ 3 ]
  */
 function getIntervalArray(start, end) {
-   // throw new Error('Not implemented');
-   var list = [];
-   for (var i = start; i <= end; i++) {
-    list.push(i);
-   }
-   return list;
+   throw new Error('Not implemented');
+   // var list = [];
+   // for (var i = start; i <= end; i++) {
+   //  list.push(i);
+   // }
+   // return list;
 }
 
 /**
@@ -647,23 +647,7 @@ function getElementByIndexes(arr, indexes) {
  * 
  */
 function swapHeadAndTail(arr) {
-   if (arr.length % 2 === 0) {
-      let elem1 = arr.length / 2;
-      console.log(elem1)
-      let arr1 = arr.splice(0,elem1)
-      console.log(arr1)
-      let arr2 = arr.splice(-elem1)
-      console.log(arr2)
-      let arr3 = arr2.concat(arr1)
-      return arr3;
-   } else if (arr.length % 2 !== 0) {
-      let elem2 = Math.floor(arr.length / 2)
-      let arr4 = arr.splice(0,elem2)
-      let arr5 = arr.splice(-elem2)
-      let arr6_0 = arr5.concat(elem2+1)
-      let arr6 = arr6_0.concat(arr4)
-      return arr6;
-   }
+   throw new Error('Not implemented');
 }
 
 
