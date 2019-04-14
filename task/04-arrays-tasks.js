@@ -172,12 +172,12 @@ function getUpperCaseStrings(arr) {
  *    [ 'angular', 'react', 'ember' ] => [ 7, 5, 5 ]
  */
 function getStringsLength(arr) {
-   throw new Error('Not implemented');
-   // var newArr = [];
-   // for (let i = 0; i < arr.length; i++) {
-	//    newArr.push(arr[i].length); 
-   // }
-   // return newArr;
+//    throw new Error('Not implemented');
+   var newArr = [];
+   arr.map(function(item, i){
+   newArr.push(arr[i].length); 
+   })
+return newArr;
 }
 
 /**
