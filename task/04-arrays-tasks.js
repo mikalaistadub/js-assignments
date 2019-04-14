@@ -23,8 +23,21 @@
  *    [0, 1, 2, 3, 4, 5], 5    => 5
  */
 function findElement(arr, value) {
-   // throw new Error('Not implemented');
-   return arr.find((value) => i === value) != -1;
+   var v = value;
+   var number = -1;
+   
+   var result = arr.map(function(item, i) {
+     if (item == v) {
+          console.log(i);
+         number = i;
+     } else {
+        number;
+     }
+      return item;
+
+  })
+  return number; 
+   
 }
 
 /**
@@ -177,7 +190,6 @@ function getStringsLength(arr) {
  *    [ 1, 'b', 'c'], 0, 'x'  => [ 'x', 1, 'b', 'c' ]
  */
 function insertItem(arr, item, index) {
-   // throw new Error('Not implemented');
    arr.splice(index, 0, item);
 	return arr;
 }
