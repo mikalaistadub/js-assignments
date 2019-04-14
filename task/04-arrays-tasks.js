@@ -107,14 +107,14 @@ function getArrayOfPositives(arr) {
  *    [ 'cat, 'dog', 'raccon' ] => [ 'cat', 'dog', 'racoon' ]
  */
 function getArrayOfStrings(arr) {
-   throw new Error('Not implemented');
-   // let newArr = [];
-   // for (let i = 0; i < arr.length; i++) {
-   //    if (typeof arr[i] === 'string' || arr[i] instanceof String ) {
-   //       newArr.push(arr[i])
-   //    }
-   // }
-   // return newArr
+   let newArr = [];
+   arr.map(function(item, i){    
+      if (typeof item === 'string' || item instanceof String ) {
+         newArr.push(arr[i]);
+      }
+      return item;
+   })
+   return newArr;
 }
 
 /**
