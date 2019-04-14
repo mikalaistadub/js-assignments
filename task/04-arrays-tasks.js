@@ -423,7 +423,17 @@ function getItemsSum(arr) {
  *  [ null, undefined, NaN, false, 0, '' ]  => 6
  */
 function getFalsyValuesCount(arr) {
-   throw new Error('Not implemented');
+   // throw new Error('Not implemented');
+   let newArr = []; 
+   arr.map(function(item, i){
+
+   if (item === false || item === "" || Number.isNaN(item) || item === null || item === undefined || item == 0) {
+      newArr.push(arr[i]);
+   }else{
+      return item;
+   }
+   })
+return newArr.length;
 }
 
 /**
@@ -525,7 +535,12 @@ function getIdentityMatrix(n) {
  *     3, 3   => [ 3 ]
  */
 function getIntervalArray(start, end) {
-   throw new Error('Not implemented');
+   // throw new Error('Not implemented');
+   var list = [];
+   for (var i = start; i <= end; i++) {
+    list.push(i);
+   }
+   return list;
 }
 
 /**
