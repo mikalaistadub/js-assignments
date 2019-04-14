@@ -34,10 +34,8 @@ function findElement(arr, value) {
         number;
      }
       return item;
-
   })
   return number; 
-   
 }
 
 /**
@@ -85,7 +83,16 @@ function doubleArray(arr) {
  *    [] => [] 
  */
 function getArrayOfPositives(arr) {
-   throw new Error('Not implemented');
+   // throw new Error('Not implemented');
+   let resultArr = [];
+   var newArr = arr.map(function(item, i) {
+    //    console.log(i);
+      if (item > 0 ) {        
+        resultArr.push(arr[i]);
+      }
+      item;
+   })
+   return resultArr;
 }
 
 /**
