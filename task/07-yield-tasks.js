@@ -33,7 +33,20 @@
  *
  */
 function* get99BottlesOfBeer() {
-    throw new Error('Not implemented');
+    //throw new Error('Not implemented');
+    // var word = "bottles"; 
+    // var count = 99; 
+    // while (count > 0) {
+    // return (count + " " + word + " of beer on the wall"); 
+    // return (count + " " + word + " of beer,"); 
+    // return ("Take one down, pass it around,");
+
+    // count = count - 1;
+    //     if (count > 0) {
+    //     return (count + " " + word + " of beer on the wall.");
+    //     } else {
+    //     return ("No more " + word + " of beer on the wall.");
+    //     } }
 }
 
 
@@ -47,7 +60,7 @@ function* get99BottlesOfBeer() {
  *
  */
 function* getFibonacciSequence() {
-    throw new Error('Not implemented');
+   // throw new Error('Not implemented');
 }
 
 

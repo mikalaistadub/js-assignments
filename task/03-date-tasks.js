@@ -22,7 +22,9 @@
  *    'Sun, 17 May 1998 03:00:00 GMT+01' => Date()
  */
 function parseDataFromRfc2822(value) {
-   throw new Error('Not implemented');
+   //throw new Error('Not implemented');
+   var date = new Date(value);
+   return date; 
 }
 
 /**
@@ -37,7 +39,9 @@ function parseDataFromRfc2822(value) {
  *    '2016-01-19T08:07:37Z' => Date()
  */
 function parseDataFromIso8601(value) {
-   throw new Error('Not implemented');
+   //throw new Error('Not implemented');
+   var date = new Date(value);
+   return date; 
 }
 
 
@@ -56,7 +60,9 @@ function parseDataFromIso8601(value) {
  *    Date(2015,1,1)    => false
  */
 function isLeapYear(date) {
-   throw new Error('Not implemented');
+   //throw new Error('Not implemented');
+   var yy = date.getFullYear();
+   return ((yy % 4 == 0) && (yy % 100 != 0)) || (yy % 400 == 0);
 }
 
 
@@ -78,7 +84,6 @@ function isLeapYear(date) {
 function timeSpanToString(startDate, endDate) {
    throw new Error('Not implemented');
 }
-
 
 /**
  * Returns the angle (in radians) between the hands of an analog clock for the specified Greenwich time.
