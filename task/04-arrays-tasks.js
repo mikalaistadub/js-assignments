@@ -50,7 +50,15 @@ function findElement(arr, value) {
  *    5 => [ 1, 3, 5, 7, 9 ]
  */
 function generateOdds(len) {
-   throw new Error('Not implemented');
+   // throw new Error('Not implemented');
+   var arr = new Array(len);
+   arr.fill(1);
+   console.log(arr);
+   var result = [];
+   arr.map(function(item, i){
+       result.push(item+i+i);
+   })
+   return result; 
 }
 
 
