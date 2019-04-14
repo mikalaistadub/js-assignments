@@ -264,12 +264,12 @@ function toCsvText(arr) {
  *   [ 10, 100, -1 ]      => [ 100, 10000, 1 ]
  */
 function toArrayOfSquares(arr) {
-   throw new Error('Not implemented');
-   // var newArr = [];
-   // for (let i = 0; i < arr.length; i++) {
-	//    newArr.push(arr[i] ** 2)
-   // }
-   // return newArr;
+   // throw new Error('Not implemented');
+   var newArr = [];
+    arr.map(function(item, i){
+	   newArr.push(arr[i] ** 2)
+   })
+   return newArr;
 }
 
 
