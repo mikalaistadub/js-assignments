@@ -131,21 +131,16 @@ function getArrayOfStrings(arr) {
  *    [ false, 0, NaN, '', undefined ]   => [ ]
  */
 function removeFalsyValues(arr) {
-   throw new Error('Not implemented');
-   // let newArr = [];
-   // for (let i = 0; i < arr.length; i++) {
-   //    if (typeof arr[i] === 'string' || arr[i] instanceof String ) {
-   //       newArr.push(arr[i])
-   //    }
-   //    if (typeof arr[i] === 'boolean' ) {
-   //        newArr.push(arr[i])
-   //    }
-   //     if ( arr[i] > 0 ) {
-   //        newArr.push(arr[i])
-   //    }
-      
-   // }
-   // return newArr
+   // throw new Error('Not implemented');
+   let newArr = []; 
+    arr.map(function(item, i){
+	  if (item === false || item === "" || Number.isNaN(item) || item === null || item === undefined || item == 0) {
+        return item;		  
+	  }else{
+        newArr.push(arr[i]);
+      }
+    })
+  return newArr;
 }
 
 /**
