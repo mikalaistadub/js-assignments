@@ -535,12 +535,21 @@ function getIdentityMatrix(n) {
  *     3, 3   => [ 3 ]
  */
 function getIntervalArray(start, end) {
-   throw new Error('Not implemented');
-   // var list = [];
-   // for (var i = start; i <= end; i++) {
-   //  list.push(i);
-   // }
-   // return list;
+   var list = [];
+   var arr = [];
+   list.length = end-start+1;
+   var firtsItem = list[0]=start;
+   // var lastItem = list[list.length-1]=end;
+
+   list.fill(0);
+//    console.log(lastItem);
+//    console.log(list);
+
+   list.map(function(item, i ){
+    // list = firtsItem+i;
+    arr.push(firtsItem+i)
+   })
+   return arr;
 }
 
 /**
